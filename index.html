@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="nav-bar__logo">
+        <img src="assets/images/logo.svg" alt="logo" />
+      </div>
+      <div class="nav-bar__menu">
+        <div class="nav-bar__icon">
+          <img
+            src="assets/images/icon-menu.svg"
+            alt="menu-icon"
+            id="icon-normal"
+          />
+          <img
+            src="assets/images/icon-menu-close.svg"
+            alt="menu-icon-close"
+            id="icon-close"
+          />
+        </div>
+        <ul class="nav-bar__option" id="nav-bar__option">
+          <li><a href="#image" class="js-scroll">Home</a></li>
+          <li><a href="#new" class="js-scroll">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#trend" class="js-scroll">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Home New Popular Trending Categories -->
+
+    <div class="grid-container">
+      <!-- // IMAGE GRID ROW --------------- -->
+      <div class="main-image" id="image">
+        <img class="mobile" src="assets/images/image-web-3-mobile.jpg" alt="main image" />
+        <img class="desktop" src="assets/images/image-web-3-desktop.jpg" alt="main image" />
+      </div>
+
+      <!-- // HEADING GRID ROW --------------- -->
+      <h1>The Bright Future of Web 3.0?</h1>
+
+      <!-- // PAREGRAPH GRID ROW --------------- -->
+      <p class="grid-container__para">
+        We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise? <button>Read more</button>
+      </p>
+
+      <!-- // NEW GRID ROW --------------- -->
+      <div class="new-grid" id="new">
+        <h2>New</h2>
+        <div class="new-grid__row">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="new-grid__row">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <div class="new-grid__row">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
+
+      <!-- // MORE GRID ROW --------------- -->
+      <div class="more-grid__topic more-grid1" id="trend">
+        <div class="topic__image">
+          <img src="assets/images/image-retro-pcs.jpg" alt="image" />
+        </div>
+        <div class="topic__content">
+          <div class="topic__content--number">01</div>
+          <h3>Reviving Retro PCs</h3>
+          <p class="topic__content--para">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+      <div class="more-grid__topic more-grid2">
+        <div class="topic__image">
+          <img src="assets/images/image-top-laptops.jpg" alt="image" />
+        </div>
+        <div class="topic__content">
+          <div class="topic__content--number">02</div>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p class="topic__content--para">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+      <div class="more-grid__topic more-grid3">
+        <div class="topic__image">
+          <img src="assets/images/image-gaming-growth.jpg" alt="image" />
+        </div>
+        <div class="topic__content">
+          <div class="topic__content--number">03</div>
+          <h3>The Growth of Gaming</h3>
+          <p class="topic__content--para">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+
+      <!-- // ATTRIBUTION ROW --------------- -->
+      <div class="attribution">
+        Challenge by
+        <a
+          class="first"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a class="second" href="#">Aditya Kumawat</a>.
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
