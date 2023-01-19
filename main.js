@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function () {
   var icon_normal = document.getElementById("icon-normal");
   var icon_close = document.getElementById("icon-close");
